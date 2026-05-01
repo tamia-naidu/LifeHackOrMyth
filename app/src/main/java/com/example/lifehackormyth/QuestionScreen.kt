@@ -90,17 +90,13 @@ class QuestionActivity : AppCompatActivity() {
         }
     }
 
-    // Function to check if user selected correct answer
     private fun checkAnswer(userAnswer: Boolean, feedbackText: TextView) {
 
-        // IF-ELSE statement to check correctness
         if (userAnswer == answers[currentIndex]) {
-            score++ // increase score if correct
-            val selected = ""
-            feedbackText.text = "$selected\n${getString(R.string.correct)}"
+            score++
+            feedbackText.text = getString(R.string.correct_answer)
         } else {
-            val selected = ""
-            feedbackText.text = "$selected\n${getString(R.string.wrong)}"
+            feedbackText.text = getString(R.string.wrong_answer)
         }
     }
 }
