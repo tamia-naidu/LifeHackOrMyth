@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="@color/deep_burgundy"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    //question screen
+    <TextView
+        android:id="@+id/questionTextView"
+        android:text="@string/question"
+        android:textSize="25sp"
+        android:textColor="@color/mustard_yellow"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    //button to tap if you think the statement is true
+    <Button
+        android:id="@+id/trueButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/mustard_yellow"
+        android:text="@string/hack_true"
+        android:textColor="@color/deep_burgundy"
+        tools:ignore="VisualLintButtonSize" />
+
+    //button to tap if you think the statement is false
+    <Button
+        android:id="@+id/falseButton"
+        android:text="@string/myth_false"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/mustard_yellow"
+        android:textColor="@color/deep_burgundy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="VisualLintButtonSize" />
+
+    //textview where feedback is displayed
+    <TextView
+        android:id="@+id/txtFeedback"
+        android:text=""
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/mustard_yellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    //next button that take you to the score screen
+    <Button
+        android:id="@+id/nextButton"
+        android:text="@string/next"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/mustard_yellow"
+        android:textColor="@color/deep_burgundy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

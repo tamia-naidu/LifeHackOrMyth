@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@color/deep_burgundy"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ExtraText">
+
+    //app name
+    <TextView
+        android:id="@+id/LifeHackOrMythTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/mustard_yellow"
+        android:text="@string/life_hack_or_myth"
+        android:fontFamily="@font/capriola_regular"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    //text view of the description
+    <TextView
+        android:id="@+id/knowledgeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/mustard_yellow"
+        android:text="@string/test_your_knowledge_of_real_life_hacks"
+        android:textSize="16sp" />
+
+    //start button
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="125dp"
+        android:layout_height="63dp"
+        android:backgroundTint="@color/mustard_yellow"
+        android:text="@string/start"
+        android:textColor="@color/deep_burgundy" />
+
+</LinearLayout>
