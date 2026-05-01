@@ -5,33 +5,35 @@ import android.os.Bundle
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 
-class QuestionActivity : AppCompatActivity()
+class QuestionActivity : AppCompatActivity() {
 
-    // list of all questions
+    // Array storing all questions
     private val questions = arrayOf(
         "Backing up your data prevents data loss",
         "Public Wi-Fi is always safe if it has a password",
         "Incognito mode makes you anonymous",
-        "Writing things down helps memory",
+        "Drinking water helps concentration",
         "Dark mode saves battery on all devices"
     )
 
-    // correct answers (true = hack, false = myth)
+    // Array storing correct answers (true = hack, false = myth)
     private val answers = booleanArrayOf(
         true, false, false, true, false
     )
 
+    // Keeps track of current question index
     private var currentIndex = 0
 
-    // Stores the score
+    // Stores user's score
     private var score = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        // Load the question screen layout
         setContentView(R.layout.activity_question_screen)
 
-        // Links to UI
+        // Link UI components
         val questionText = findViewById<TextView>(R.id.questionTextView)
         val feedbackText = findViewById<TextView>(R.id.txtFeedback)
         val btnTrue = findViewById<Button>(R.id.trueButton)
@@ -47,23 +49,24 @@ class QuestionActivity : AppCompatActivity()
         // Load first question
         loadQuestion()
 
-        // True button click
+        // TRUE button click
         btnTrue.setOnClickListener {
             checkAnswer(true, feedbackText)
         }
 
-        // False button click
+        // FALSE button click
         btnFalse.setOnClickListener {
             checkAnswer(false, feedbackText)
         }
 
-        // Next button click
+        // NEXT button click
         btnNext.setOnClickListener {
 
             // Move to next question
             currentIndex++
 
             // WHILE LOOP used to control iteration through questions
+            // This ensures we only display valid questions within array bounds
             while (currentIndex < questions.size) {
                 loadQuestion() // display next question
                 break          // stop loop so only ONE question shows at a time
@@ -72,6 +75,7 @@ class QuestionActivity : AppCompatActivity()
             // If all questions are completed
             if (currentIndex >= questions.size) {
 
+                // Navigate to Score screen
                 val intent = Intent(this, ScoreActivity::class.java)
 
                 // Pass data to next screen
@@ -89,11 +93,14 @@ class QuestionActivity : AppCompatActivity()
     // Function to check if user selected correct answer
     private fun checkAnswer(userAnswer: Boolean, feedbackText: TextView) {
 
+        // IF-ELSE statement to check correctness
         if (userAnswer == answers[currentIndex]) {
-            score++
-            feedbackText.text = getString(R.string.correct_answer)
+            score++ // increase score if correct
+            val selected = ""
+            feedbackText.text = "$selected\n${getString(R.string.correct)}"
         } else {
-            feedbackText.text = getString(R.string.wrong_answer)
+            val selected = ""
+            feedbackText.text = "$selected\n${getString(R.string.wrong)}"
         }
     }
 }
