@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 
-class QuestionActivity : AppCompatActivity() {
+class QuestionActivity : AppCompatActivity()
 
     // list of all questions
     private val questions = arrayOf(
