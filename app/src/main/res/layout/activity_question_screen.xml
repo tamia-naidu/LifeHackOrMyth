@@ -8,7 +8,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    //question screen
+    <!-- question screen -->
     <TextView
         android:id="@+id/questionTextView"
         android:text="@string/question"
@@ -20,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
-    //button to tap if you think the statement is true
+    <!-- button to tap if you think the statement is true -->
     <Button
         android:id="@+id/trueButton"
         android:layout_width="match_parent"
@@ -30,7 +30,7 @@
         android:textColor="@color/deep_burgundy"
         tools:ignore="VisualLintButtonSize" />
 
-    //button to tap if you think the statement is false
+    <!-- button to tap if you think the statement is false -->
     <Button
         android:id="@+id/falseButton"
         android:text="@string/myth_false"
@@ -42,7 +42,7 @@
         android:layout_height="wrap_content"
         tools:ignore="VisualLintButtonSize" />
 
-    //textview where feedback is displayed
+    <!-- textview where feedback is displayed -->
     <TextView
         android:id="@+id/txtFeedback"
         android:text=""
@@ -52,7 +52,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
-    //next button that take you to the score screen
+    <!-- next button that take you to the score screen -->
     <Button
         android:id="@+id/nextButton"
         android:text="@string/next"

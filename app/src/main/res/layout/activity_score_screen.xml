@@ -16,7 +16,7 @@
         android:text="@string/score"
         android:textSize="24sp" />
 
-    //results button
+    <!-- results button -->
     <TextView
         android:id="@+id/resultTextView"
         android:layout_width="wrap_content"
@@ -25,7 +25,7 @@
         android:text="@string/result"
         android:textSize="20sp" />
 
-    //review button which you tap to go to the review screen where you can review statements
+    <!-- review button which you tap to go to the review screen where you can review statements -->
     <Button
         android:id="@+id/reviewButton"
         android:text="@string/review_answers"
