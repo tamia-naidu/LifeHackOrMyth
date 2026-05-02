@@ -1,6 +1,8 @@
 # 📱 Like Hack or Myth?
 
-Test your knowledge by choosing true or false. 
+## 📌 App Description:
+The *Life Hack or Myth* app is a native Android application developed using Kotlin in Android Studio.  
+The purpose of the app is to help users distinguish between real-life hacks and common myths through an interactive quiz.
 
 ## 🚀 Features Include:
 - App displays 4 screens (Welcome screen, Question screen, Score screen & Review screen).
@@ -10,27 +12,31 @@ Test your knowledge by choosing true or false.
 - Next button.
 - Score screen displays the score out of 5. 
 - Review button.
-- Review screen allows users to see all questions with the correct answer displayed. 
+- Review screen allows users to see all questions and correct answers. 
 
 ## 🛠 Built with:
 - Kotlin
 - Android Studio
+- GitHub (version control)
   
 ## GitHub Actions:
 A GitHub Action is optionally named and defines when it should run (e.g., on a pull request).
 This project uses GitHub Actions to automatically build the app when code is pushed.
 
-### Installation:
+### 🧠 Installation:
 1. Clone the repo
 2. Open in Android Studio
 3. Run the app
+
+## 📹 Demo Video:
+-
 
 ## 📧 Author/Contact:
 Tamia Naidu
 Github profile:tamia-naidu
 
 ## 📄 License:
-MIT License
+- MIT License
 
 ## References:
 - Android Studio, 2014. The official Integrated Development Environment (IDE) for Android application development. Version Panda 4 | 2025.3.4. Available at: <https://developer.android.com/studio> [Accessed 1 May 2026]
