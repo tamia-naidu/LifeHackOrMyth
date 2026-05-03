@@ -47,4 +47,4 @@ Github profile:tamia-naidu
 
 - Practical Coding, 2023. Video on GitHub Actions / Android development. [video online]Available at: <https://www.youtube.com/watch?v=d0uith-LE3o> [1 May 2026].
 
-- Tutorial Toolkit, 2025. Video tutorial. [video online] Available at: ><https://www.youtube.com/watch?v=5ArbNlr6Rpw> [Accessed 1 May 2026]
+- Tutorial Toolkit, 2025. Video tutorial. [video online] Available at: <https://www.youtube.com/watch?v=5ArbNlr6Rpw> [Accessed 1 May 2026]
