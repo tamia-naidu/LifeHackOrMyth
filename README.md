@@ -29,7 +29,7 @@ This project uses GitHub Actions to automatically build the app when code is pus
 3. Run the app
 
 ## 📹 Demo Video:
--
+- <https://youtu.be/8Z-kbPUdlXs>
 
 ## 📧 Author/Contact:
 Tamia Naidu
