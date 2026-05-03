@@ -1,8 +1,7 @@
 # 📱 Like Hack or Myth?
 
 ## App Description:
-The *Life Hack or Myth* app is a native Android application developed using Kotlin in Android Studio.  
-The purpose of the app is to help users distinguish between real-life hacks and common myths through an interactive quiz.
+The Life Hack or Myth app is an Android application developed utilising Kotlin through Android Studio. The intetion of the app is to assist users to distinguish between life hacks and myths using a quiz format.
 
 ## Features Include:
 - App displays 4 screens (Welcome screen, Question screen, Score screen & Review screen).
